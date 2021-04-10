@@ -1,0 +1,27 @@
+.thanks{
+    font-size: 45px;
+    font-style: italic;
+}
+
+.message__title{
+    font-size: 40px;
+}
+
+.message__text{
+    color: #2a4e7b;
+    font-size: 50px;
+}
+
+.mail{
+    color: #757599;
+    font-weight: 400;
+}
+
+.reply{
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+div {
+    margin-bottom: 30px;
+}

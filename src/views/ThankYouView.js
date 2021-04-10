@@ -35,20 +35,16 @@ class ThankYouView extends React.Component {
     const htmlEl = document.querySelector('html')
     htmlEl.dataset['wfPage'] = '6065cbb68e4e52cd3e053387'
     htmlEl.dataset['wfSite'] = '6065c405e40bf938a4d315a4'
-
+    /*
     scripts.concat(null).reduce((active, next) => Promise.resolve(active).then((active) => {
       const loading = active.loading.then((script) => {
-        new Function(`
-          with (this) {
-            eval(arguments[0])
-          }
+        new Function(`with (this) { eval(arguments[0]) }
         `).call(window, script)
-
         return next
       })
-
       return active.isAsync ? next : loading
     }))
+    */
   }
 
   render() {

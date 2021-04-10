@@ -14,8 +14,8 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={IndexController} />
         <Route path='/thank-you' component={ThankYouController} />
+        <Route path='/' component={IndexController} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

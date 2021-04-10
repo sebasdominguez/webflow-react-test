@@ -14,7 +14,6 @@ const ContactFormController = () => {
             pathname: "/thank-you",
             state: {name,email,message}
         })
-        //console.log(`Submit con Name: ${name}, Email: ${email}, Message: ${message}`)
     }
 
     return (

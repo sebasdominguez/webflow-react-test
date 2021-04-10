@@ -34,15 +34,15 @@ class ContactFormView extends React.Component {
     /* View has no WebFlow data attributes */
 
     scripts.concat(null).reduce((active, next) => Promise.resolve(active).then((active) => {
-      const loading = active.loading.then((script) => {
-        new Function(`
-          with (this) {
-            eval(arguments[0])
-          }
-        `).call(window, script)
+      // const loading = active.loading.then((script) => {
+      //   new Function(`
+      //     with (this) {
+      //       eval(arguments[0])
+      //     }
+      //   `).call(window, script)
 
-        return next
-      })
+      //   return next
+      // })
 
       return active.isAsync ? next : loading
     }))
