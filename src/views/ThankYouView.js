@@ -38,11 +38,11 @@ class ThankYouView extends React.Component {
 
     scripts.concat(null).reduce((active, next) => Promise.resolve(active).then((active) => {
       const loading = active.loading.then((script) => {
-        new Function(`
-          with (this) {
-            eval(arguments[0])
-          }
-        `).call(window, script)
+        // new Function(`
+        //   with (this) {
+        //     eval(arguments[0])
+        //   }
+        // `).call(window, script)
 
         return next
       })
