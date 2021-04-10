@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles'
+import './scripts'
+import IndexController from './controllers/IndexController'
+import ThankYouController from './controllers/ThankYouController'
+import NotFoundView from './views/NotFoundView'
+import UnauthorizedView from './views/UnauthorizedView'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={IndexController} />
+        <Route path='/thank-you' component={ThankYouController} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
