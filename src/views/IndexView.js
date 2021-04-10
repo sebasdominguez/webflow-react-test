@@ -162,7 +162,7 @@ class IndexView extends React.Component {
             <div className="af-class-footer-wrap">
               <div>
                 <a href="https://webflow.com/" target="_blank" className="af-class-webflow-link w-inline-block"><img src="images/webflow-w-small2x_1webflow-w-small@2x.png" width={15} alt className="af-class-webflow-logo-tiny" />
-                  <div className="af-class-paragraph-tiny">Powered by Webflow</div>
+                  <span className="af-class-paragraph-tiny">Powered by Webflow</span>
                 </a>
               </div>
               <div className="af-class-footer-links">

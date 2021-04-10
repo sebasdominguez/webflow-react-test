@@ -7,13 +7,13 @@ const scripts = [
     isAsync: false,
   },
   {
-    type: 'code',
-    body: '!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);',
+    type: 'src',
+    body: 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js',
     isAsync: false,
   },
   {
-    type: 'src',
-    body: 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js',
+    type: 'code',
+    body: '!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);',
     isAsync: false,
   },
 ]
