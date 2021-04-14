@@ -7,8 +7,8 @@ import './styles'
 import './scripts'
 import IndexController from './controllers/IndexController'
 import ThankYouController from './controllers/ThankYouController'
-import NotFoundView from './views/NotFoundView'
-import UnauthorizedView from './views/UnauthorizedView'
+// import NotFoundView from './views/NotFoundView'
+// import UnauthorizedView from './views/UnauthorizedView'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -8,12 +8,16 @@ const ContactFormController = () => {
     const [message, setMessage] = useState('')
     const history = useHistory();
 
-    const handleSubmit = () => {
-        //e.target.reset();
-        history.push({
-            pathname: "/thank-you",
-            state: {name,email,message}
-        })
+    const handleSubmit = (e) => {
+        if (message.length < 10){
+            e.preventDefault()
+            alert("Please enter a minimum of 10 characters...")
+        } else {
+            history.push({
+                pathname: "/thank-you",
+                state: {name,email,message}
+            })
+        }   
     }
 
     return (
